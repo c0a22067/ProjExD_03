@@ -211,7 +211,7 @@ def main():
                     score.score += 1
                     score.update()
 
-        bombs = [bomb for bomb in bombs if bomb is not None] #もし、bombがNoneではないならbombにbombsを代入
+        bombs = [bomb for bomb in bombs if bomb is not None] #もし、bombがNoneではないならbombにbombsを代入。
 
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
